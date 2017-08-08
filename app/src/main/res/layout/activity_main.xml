@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="anhdt.com.contactlist.MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#03A9F4"
+        android:padding="10dp">
+
+        <SearchView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@android:color/white"
+            android:queryHint="Search some contact">
+
+        </SearchView>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="@string/plus"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/lv_contact_main"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>

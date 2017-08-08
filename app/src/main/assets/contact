@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <employee id="1" title="Mỹ">
+        <name>Barack Obama</name>
+        <phone>0123456789</phone>
+    </employee>
+    <employee id="2" title="Nga">
+        <name>Vladimir Putin</name>
+        <phone>0169121518</phone>
+    </employee>
+    <employee id="3" title="Anh">
+        <name>Elizabeth II</name>
+        <phone>0124681012</phone>
+    </employee>
+    <employee id="4" title="Đức">
+        <name>Joachim Gauck</name>
+        <phone>0135795732</phone>
+    </employee>
+    <employee id="5" title="Pháp">
+        <name>Dois Hollande</name>
+        <phone>0987543210</phone>
+    </employee>
+</employees>
