@@ -1,12 +1,14 @@
 package anhdt.com.contactlist;
 
+import android.support.annotation.NonNull;
+
 /**
  * Created by admin on 8/8/2017.
  */
 
-public class Contact {
-    private String firstName;
-    private String lastName;
+public class Contact{
+    private String firstName; //tên chính
+    private String lastName; //họ
     private String profileImage;
     private String email;
     private String phoneNumber;

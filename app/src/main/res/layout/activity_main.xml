@@ -9,14 +9,15 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:background="#03A9F4"
-        android:padding="10dp">
+        android:padding="7dp">
 
         <SearchView
+            android:id="@+id/sv_contact"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="5"
+            android:layout_weight="8"
             android:background="@android:color/white"
             android:queryHint="Search some contact">
 
@@ -35,13 +36,15 @@
             android:textStyle="bold" />
     </TableRow>
 
-    <ListView
-        android:id="@+id/lv_contact_main"
-        android:padding="5dp"
+    <com.sylversky.indexablelistview.widget.IndexableListView
+        android:id="@+id/lv_contact_indexlv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </ListView>
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="2dp"
+        android:layout_height="match_parent">
+    </com.sylversky.indexablelistview.widget.IndexableListView>
 
 
 </LinearLayout>

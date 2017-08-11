@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECEFF1"
+    tools:context="anhdt.com.contactlist.FixContactAct">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00bcd4"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_cancel_fix"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/border_cancel_button"
+            android:gravity="center"
+            android:text="Hủy"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="Change Contact Information"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_ok_fix_contact"
+            android:background="@drawable/border_ok_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="OK"/>
+
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@android:color/background_light"
+        android:layout_height="100dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_fix_image_contact"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_avatar_default" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#ECEFF1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@android:color/background_light"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_fix_first_name"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"/>
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@android:color/darker_gray"/>-->
+
+        <EditText
+            android:id="@+id/edt_fix_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:inputType="textPersonName"
+            android:hint="Last Name"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#ECEFF1"/>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:background="@android:color/background_light"
+        android:paddingRight="15dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="P/N"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:layout_height="match_parent"/>
+        <EditText
+            android:id="@+id/edt_fix_phone_number"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:inputType="phone"
+            android:textColor="#000"
+            android:hint="Phone number"
+            android:textSize="14sp"
+            android:layout_height="match_parent" />
+
+
+    </TableRow>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#ECEFF1"/>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/background_light"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Email"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/edt_fix_email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#000"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tv_delete_contact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@android:color/holo_red_light"
+        android:text="Delete this contact"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/background_light"/>
+</LinearLayout>
